@@ -1,0 +1,98 @@
+* {
+    all: unset;
+}
+.body {
+    background-color: #ffffff;
+    border-radius: 0.5em;
+}
+title {
+    text-align: center;
+    display: none;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    width: 100%;
+    height: fit-content;
+}
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1.3em;
+}
+.item-url {
+    font-size: 1em;
+    color: gray;
+}
+.search-bar {
+    border: 1px solid gainsboro;
+    border-radius: 1em;
+    padding-block: 0.3em;
+    padding-inline: 0.7em;
+    width: 30em;
+    font-size: 1.5em;
+}
+.search-controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    width: 100%;
+}
+#search-btn {
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 1em;
+    padding-block: 0.3em;
+    padding-inline: 0.7em;
+    width: 5em;
+    font-size: 1.3em;
+    background-color: #1e90ff;
+    transition: all linear 0.15s;
+    color: white;
+}
+#search-btn:hover {
+    cursor: pointer;
+    background-color: #87cefa;
+    transition: all linear 0.15s;
+}
+#results {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1em;
+    width: 100%;
+    max-width: 800px;
+}
+.item-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    border-radius: 0.5em;
+}
+.item-container:hover {
+    background-color: rgb(239, 239, 239);
+    cursor: pointer;
+    transition: all linear 0.15s;
+}
+.item-img {
+    height: 5em;
+    width: 5em;
+    padding: 0.5em;
+    box-sizing: border-box;
+}
